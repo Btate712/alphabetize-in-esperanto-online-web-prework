@@ -6,11 +6,18 @@ def alphabetize(arr)
   return_array = []
   index = 0
 
+  # encode each word in arr to an array of integers based on their index in 
+  # the string ESPERANTO_ALPHABET
   arr.each do |word|
     encoded_array[index] = encode(word)
     index += 1
   end
-  encoded_array.sort{ |a, b| a <=> b}
+
+  # sort the encodeed array
+  encoded_array.sort
+
+  # decode each "word" in the sorted encoded array and push it into the 
+  # return_array
   encoded_array.each do |encoded_word|
     return_array.push(decode(encoded_word))
   end
