@@ -12,4 +12,3 @@ def encode_to_ascii(word)
   end
   binding.pry
 end
-  
