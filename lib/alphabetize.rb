@@ -10,11 +10,8 @@ def alphabetize(arr)
     encoded_array[index] = encode(word)
     index += 1
   end
-  binding.pry
   encoded_array.sort{ |a, b| a <=> b}
-  binding.pry
   encoded_array.each do |encoded_word|
-    binding.pry
     decoded_array = decode(encoded_word)
   end
 
