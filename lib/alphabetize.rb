@@ -2,13 +2,12 @@ require 'pry'
 ESPERANTO_ALPHABET = "abcĉdefgĝhĥijĵklmnoprsŝtuŭvz "
 
 def alphabetize(arr)
-  arr.sort_by{ |word| encode_to_ascii(word)}
+  arr.sort{ |word1, word2| encode_(word1) <=> encode(word2)}
 end
 
-def encode_to_ascii(word)
-  encoded_word = ""
+def encode(word)
+  word_array = []
   for letter in 0..(word.length - 1)
-    encoded_word += (60 + ESPERANTO_ALPHABET.index(word[letter])).chr
+    word_array.push(ESPERANTO_ALPHABET.index(word[i]))
   end
-#  binding.pry
 end
