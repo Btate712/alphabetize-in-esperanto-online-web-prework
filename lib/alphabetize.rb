@@ -4,17 +4,17 @@ ESPERANTO_ALPHABET = "abcĉdefgĝhĥijĵklmnoprsŝtuŭvz "
 def alphabetize(arr)
   encoded_array = []
   return_array = []
-  
+
   arr.each do |word|
     encoded_array = encode(word)
   end
-  
+
   encoded_array.sort{ |a, b| a <=> b}
-  
+
   encoded_array.each do |encoded_word|
     decoded_array = decode(encoded_word)
   end
-  
+
   decoded_array
 end
 
@@ -33,4 +33,3 @@ def decode(word)
   end
   decoded_array.join
 end
-    
