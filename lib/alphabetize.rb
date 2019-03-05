@@ -12,10 +12,9 @@ def alphabetize(arr)
   end
   encoded_array.sort{ |a, b| a <=> b}
   encoded_array.each do |encoded_word|
-    decoded_array = decode(encoded_word)
+    return_array.push(decode(encoded_word))
   end
-
-  decoded_array
+  return_array
 end
 
 def encode(word)
