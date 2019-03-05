@@ -23,6 +23,7 @@ def encode(word)
   for letter in 0..(word.length - 1)
     word_array.push(ESPERANTO_ALPHABET.index(word[letter]))
   end
+  binding.pry
   word_array
 end
 
