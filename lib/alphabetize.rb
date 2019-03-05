@@ -39,5 +39,3 @@ def decode(word)
   end
   decoded_array.join
 end
-
-
