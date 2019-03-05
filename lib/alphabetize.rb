@@ -2,7 +2,7 @@ require 'pry'
 ESPERANTO_ALPHABET = "abcĉdefgĝhĥijĵklmnoprsŝtuŭvz "
 
 def alphabetize(arr)
-  arr.sort{ |word1, word2| encode_(word1) <=> encode(word2)}
+  arr.sort{ |word1, word2| encode(word1) <=> encode(word2)}
 end
 
 def encode(word)
