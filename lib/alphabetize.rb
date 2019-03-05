@@ -4,9 +4,11 @@ ESPERANTO_ALPHABET = "abcĉdefgĝhĥijĵklmnoprsŝtuŭvz "
 def alphabetize(arr)
   encoded_array = []
   return_array = []
-
+  index = 0
+  
   arr.each do |word|
-    encoded_array = encode(word)
+    encoded_array[index] = encode(word)
+    index += 1
   end
   binding.pry
   encoded_array.sort{ |a, b| a <=> b}
