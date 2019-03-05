@@ -8,7 +8,7 @@ end
 def encode_to_ascii(word)
   encoded_word = ""
   for letter in 0..(word.length - 1)
-    encoded_word += (67 + ESPERANTO_ALPHABET.index(word[letter])).chr
+    encoded_word += (64 + ESPERANTO_ALPHABET.index(word[letter])).chr
   end
   binding.pry
 end
