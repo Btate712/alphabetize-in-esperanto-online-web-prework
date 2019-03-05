@@ -14,7 +14,7 @@ def alphabetize(arr)
   end
 
   # sort the encodeed array
-  encoded_array.sort
+  encoded_array = encoded_array.sort
 
   # decode each "word" in the sorted encoded array and push it into the
   # return_array
