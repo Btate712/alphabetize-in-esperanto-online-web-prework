@@ -27,10 +27,11 @@ def encode(word)
 end
 
 def decode(word)
+  binding.pry
   decoded_array = []
   for letter in 0..(word.length - 1)
     decoded_array.push(ESPERANTO_ALPHABET[word[letter]])
+    binding.pry
   end
-  binding.pry
   decoded_array.join
 end
