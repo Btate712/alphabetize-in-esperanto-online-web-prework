@@ -8,10 +8,11 @@ def alphabetize(arr)
   arr.each do |word|
     encoded_array = encode(word)
   end
-
+  binding.pry
   encoded_array.sort{ |a, b| a <=> b}
-
+  binding.pry
   encoded_array.each do |encoded_word|
+    binding.pry
     decoded_array = decode(encoded_word)
   end
 
@@ -27,11 +28,9 @@ def encode(word)
 end
 
 def decode(word)
-  binding.pry
   decoded_array = []
   for letter in 0..(word.length - 1)
     decoded_array.push(ESPERANTO_ALPHABET[word[letter]])
-    binding.pry
   end
   decoded_array.join
 end
