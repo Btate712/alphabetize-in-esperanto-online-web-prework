@@ -8,6 +8,6 @@ end
 def encode(word)
   word_array = []
   for letter in 0..(word.length - 1)
-    word_array.push(ESPERANTO_ALPHABET.index(word[i]))
+    word_array.push(ESPERANTO_ALPHABET.index(word[letter]))
   end
 end
