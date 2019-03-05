@@ -40,6 +40,4 @@ def decode(word)
   decoded_array.join
 end
 
-bonan_encoded = encode("bonan")
-puts "\"bonan\" encodes to \"#{bonan_encoded}\""
-puts "\"#{bonan_encoded}\" decodes to \"#{decode(bonan_encoded)}\""
+
